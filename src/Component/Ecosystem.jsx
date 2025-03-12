@@ -1,4 +1,4 @@
-import "./ecosystem.css"
+import "./Ecosystem.css"
 import DImage from "../assets/D2.jpg"; 
 import ChainImage from "../assets/Chainlink.jpg"
 import StarImage from "../assets/Stargate.jpg"
