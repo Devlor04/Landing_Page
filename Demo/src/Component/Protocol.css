@@ -1,0 +1,165 @@
+.protocol-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px;
+  background: #ffffff;
+}
+
+.protocol-container {
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+}
+
+.protocol-header {
+  text-align: center;
+  max-width: 800px;
+}
+
+.protocol-header h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 16px 0;
+  color: #111827;
+}
+
+.protocol-header p {
+  font-size: 24px;
+  color: #6b7280;
+  margin: 0;
+}
+
+.protocol-features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  width: 100%;
+}
+
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.feature-icon {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  color: #06b6d4;
+  font-size: 48px;
+}
+
+.feature-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.feature-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 12px 0;
+  color: #111827;
+}
+
+.feature-card p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #6b7280;
+  margin: 0 0 20px 0;
+  max-width: 300px;
+}
+
+.feature-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #111827;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.feature-link:hover {
+  color: #06b6d4;
+}
+
+.feature-link svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .protocol-features {
+    gap: 30px;
+  }
+
+  .protocol-header h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .protocol-wrapper {
+    padding: 60px 20px;
+  }
+
+  .protocol-container {
+    gap: 60px;
+  }
+
+  .protocol-features {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+  }
+
+  .protocol-header h1 {
+    font-size: 36px;
+  }
+
+  .protocol-header p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .protocol-wrapper {
+    padding: 40px 20px;
+  }
+
+  .protocol-container {
+    gap: 40px;
+  }
+
+  .protocol-header h1 {
+    font-size: 32px;
+  }
+
+  .protocol-header p {
+    font-size: 18px;
+  }
+
+  .feature-card {
+    padding: 16px;
+  }
+
+  .feature-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 36px;
+  }
+}
+
