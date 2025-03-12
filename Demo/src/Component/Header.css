@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+.header {
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(to bottom right, #e6f7f2, #f0f9f6);
+  padding: 0 24px;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+}
+
+.logo svg {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.nav-links {
+  display: none;
+  margin-left: 40px;
+}
+
+@media (min-width: 768px) {
+  .nav-links {
+    display: flex;
+    gap: 32px;
+  }
+}
+
+.nav-link {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: #666;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.social-link {
+  color: #333;
+  transition: color 0.2s;
+}
+
+.social-link:hover {
+  color: #666;
+}
+
+.telegram-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.telegram-icon span {
+  color: white;
+  font-size: 12px;
+}
+
+.launch-app-button {
+  display: none;
+  align-items: center;
+  background-color: white;
+  color: #333;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+@media (min-width: 768px) {
+  .launch-app-button {
+    display: flex;
+  }
+}
+
+.launch-app-button:hover {
+  background-color: #f5f5f5;
+}
+
+.launch-app-button svg {
+  margin-left: 8px;
+}
+
+.theme-toggle {
+  padding: 8px;
+  border-radius: 50%;
+  background-color: #f5f5f5;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+.theme-toggle:hover {
+  background-color: #e5e5e5;
+}
+
