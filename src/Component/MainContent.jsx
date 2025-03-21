@@ -1,21 +1,10 @@
 import "./MainContent.css";
 import DImage from "../assets/D2.jpg"; 
-import { AiOutlineStar, AiOutlineInfoCircle, AiOutlineArrowRight } from "react-icons/ai"; 
-
+import {  AiOutlineInfoCircle, AiOutlineArrowRight } from "react-icons/ai"; 
 
 function MainContent() {
   return (
     <main className="main-content">
-      {/* Background decorative elements */}
-      <div className="star-bg star-bg-1">
-        <AiOutlineStar size={24} />
-      </div>
-      <div className="star-bg star-bg-2">
-        <AiOutlineStar size={24} />
-      </div>
-      <div className="star-bg star-bg-3">
-        <AiOutlineStar size={24} />
-      </div>
 
       <div className="container">
         {/* Hero Section */}
@@ -35,7 +24,7 @@ function MainContent() {
           </div>
 
           <div className="hero-image">
-            <img src={DImage} alt="Minh họa Nền tảng Radiant" width={400} height={400} />
+            <img src={DImage} alt="Minh họa Nền tảng Radiant" width={300} height={300} />
           </div>
         </section>
 
@@ -65,9 +54,6 @@ function MainContent() {
             <div className="stat-value">~268%</div>
           </div>
         </section>
-
-        {/* Crypto Section */}
-       
       </div>
     </main>
   );

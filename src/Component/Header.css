@@ -1,9 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+/* Header.css */
 
 .header {
   font-family: "Inter", sans-serif;
-  background: linear-gradient(to bottom right, #e6f7f2, #f0f9f6);
+  background: linear-gradient(to bottom right, #ebf0ee, #eff4f2);
   padding: 0 24px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .header-container {
@@ -73,21 +76,6 @@
   color: #666;
 }
 
-.telegram-icon {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: #333;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.telegram-icon span {
-  color: white;
-  font-size: 12px;
-}
-
 .launch-app-button {
   display: none;
   align-items: center;
@@ -130,3 +118,43 @@
   background-color: #e5e5e5;
 }
 
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: max-height 0.3s ease-in-out;
+    overflow: hidden;
+    max-height: 0;
+  }
+
+  .nav-links.active {
+    max-height: 300px; /* Đặt giá trị phù hợp với chiều cao menu của bạn */
+  }
+
+  .nav-link {
+    padding: 12px 24px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  .launch-app-button {
+    margin: 16px;
+  }
+}

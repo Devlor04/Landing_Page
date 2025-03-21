@@ -19,13 +19,13 @@
   font-weight: 500;
 }
 
+/* Responsive Grid */
 .ecosystem-partners {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 80px;
   width: 100%;
-  flex-wrap: wrap;
 }
 
 .partner-link {
@@ -45,27 +45,24 @@
   object-fit: contain;
 }
 
-/* Responsive Design */
-@media (max-width: 1024px) {
-  .ecosystem-partners {
-    gap: 60px;
-  }
-}
-
+/* Máy tính bảng (Tablet): 2 cột */
 @media (max-width: 768px) {
   .ecosystem-wrapper {
     padding: 40px 20px;
   }
 
   .ecosystem-partners {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 cột */
     gap: 40px;
   }
 
   .partner-logo {
-    height: 28px;
+    height: 80px;
   }
 }
 
+/* Điện thoại (Mobile): 1 cột */
 @media (max-width: 480px) {
   .ecosystem-wrapper {
     padding: 30px 15px;
@@ -77,11 +74,12 @@
   }
 
   .ecosystem-partners {
+    display: grid;
+    grid-template-columns: 1fr; /* 1 cột */
     gap: 30px;
   }
 
   .partner-logo {
-    height: 24px;
+    height: 60px;
   }
 }
-

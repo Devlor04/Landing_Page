@@ -150,19 +150,79 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .radiant-mission-container {
+    padding: 40px;
+    flex-direction: column;
+    height: auto;
+  }
+  .radiant-mission-content {
+    max-width: 100%;
+    text-align: center;
+  }
+  .radiant-chain-icon {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    right: auto;
+    top: auto;
+    margin: 20px auto 0;
+  }
+}
+
 @media (max-width: 768px) {
-  .radiant-mission-container { padding: 30px; }
-  .radiant-mission-title { font-size: 36px; margin-bottom: 30px; }
-  .radiant-mission-text { font-size: 20px; max-width: 100%; }
-  .radiant-mission-tabs { gap: 20px; margin-bottom: 30px; }
+  .radiant-mission-container {
+    padding: 30px;
+    border-radius: 20px;
+  }
+  .radiant-mission-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  .radiant-mission-tabs {
+    gap: 15px;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+  }
+  .radiant-tab-button {
+    font-size: 18px;
+  }
+  .radiant-mission-text {
+    font-size: 18px;
+    max-width: 100%;
+  }
+  .radiant-chain-icon {
+    width: 180px;
+    height: 180px;
+    position: relative;
+    top: 100px;
+  }
 }
 
 @media (max-width: 480px) {
-  .radiant-mission-wrapper { padding: 20px 10px; }
-  .radiant-mission-container { padding: 25px 20px; border-radius: 16px; }
-  .radiant-mission-title { font-size: 32px; margin-bottom: 25px; }
-  .radiant-mission-text { font-size: 18px; }
-  .radiant-mission-tabs { gap: 15px; margin-bottom: 25px; }
-  .radiant-tab-button { font-size: 16px; }
-  .radiant-chain-icon { width: 160px; height: 160px; }
+  .radiant-mission-wrapper {
+    padding: 15px;
+  }
+  .radiant-mission-container {
+    padding: 20px;
+    border-radius: 16px;
+  }
+  .radiant-mission-title {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  .radiant-mission-tabs {
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  .radiant-tab-button {
+    font-size: 16px;
+  }
+  .radiant-mission-text {
+    font-size: 16px;
+  }
+  .radiant-chain-icon {
+    width: 140px;
+    height: 140px;
+  }
 }

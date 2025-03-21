@@ -1,8 +1,15 @@
-import "./Header.css";
-import { FaStar, FaGithub, FaTwitter, FaTelegramPlane, FaMoon } from "react-icons/fa";
-import { FiArrowRight } from "react-icons/fi";
+import React, { useState } from 'react';
+import './Header.css';
+import { FaStar, FaGithub, FaTwitter, FaTelegramPlane, FaMoon, FaBars } from 'react-icons/fa';
+import { FiArrowRight } from 'react-icons/fi';
 
 function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <header className="header">
       <div className="header-container">
@@ -12,7 +19,7 @@ function Header() {
             <span>RADIANT</span>
           </a>
 
-          <nav className="nav-links">
+          <nav className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
             <a href="#" className="nav-link">Governance</a>
             <a href="#" className="nav-link">Security</a>
             <a href="#" className="nav-link">Documentation</a>
@@ -30,6 +37,10 @@ function Header() {
 
           <button className="theme-toggle">
             <FaMoon />
+          </button>
+
+          <button className="menu-toggle" onClick={toggleMenu}>
+            <FaBars />
           </button>
         </div>
       </div>
